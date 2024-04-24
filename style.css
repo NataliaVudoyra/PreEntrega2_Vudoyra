@@ -1,0 +1,166 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+.logo {
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+nav{
+    height: 80px
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff !important;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: #E5530E !important;
+}
+
+.navbar{
+    background-color: #333 !important;
+}
+
+.nav-item{
+    background-color: #333;
+}
+
+footer {
+    background-color: #333;
+    padding: 20px 0;
+    color: #fff;
+    justify-content: space-between;
+    
+}
+
+footer .logo img {
+    height: 50px;
+    margin-left: 20px;
+}
+
+footer .logo {
+    display: flex;
+    align-items: center;
+  }
+
+footer .social-media {
+    margin-top: 20px;
+    gap: 10px; 
+    text-align: right;
+}
+
+footer .social-media a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+footer .social-media a img {
+    height: 30px;
+}
+.footer-container {
+    padding: 20px 0; 
+  }
+  
+  .footer-logo img {
+    height: 50px; 
+    margin-right: 10px; 
+  }
+
+  @media (max-width: 576px) {
+    .footer-content {
+      flex-direction: column; 
+      align-items: flex-start; 
+    }
+  }
+  
+.news{
+    display: grid;
+    grid-template-columns: 3;
+}
+
+.bg-color{
+    background-color: #333;
+}
+
+.white-text{
+    color: white !important;
+}
+
+.lexend {
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 23px;
+  font-style: normal;
+}
+
+.btn-color{
+    background-color: #E5530E !important;
+}
+
+.black-bg{
+    background-color: #040C17;
+}
+
+.home {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .text-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .image-container img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .container-full{
+    height: 100vh;
+  }
+
+  .card {
+    margin: auto; 
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  }
+
+  .parragraph{
+    color: #000;
+    text-align: justify;
+    font-family: Lexend;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin: 20px 20px 20px 20px;
+  }
+
+  h4{
+    text-align: center;
+  }
+
+  .poster{
+    border-radius: 10px !important;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin: auto;
+    border: rgba(0, 0, 0, 0) !important;
+  }

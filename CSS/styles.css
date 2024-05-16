@@ -3,6 +3,29 @@ body {
   padding: 0;
 }
 
+.poster, .card {
+  margin: auto;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.parragraph {
+  font: "Lexend", sans-serif auto normal;
+  font-size: 25px;
+  font-weight: 300;
+  line-height: normal;
+  text-align: justify;
+  margin: 20px;
+}
+
+h4 {
+  text-align: center;
+}
+
+.poster {
+  border-radius: 10px !important;
+  border: rgba(0, 0, 0, 0) !important;
+}
+
 .logo {
   height: 20px;
   display: flex;
@@ -105,7 +128,7 @@ footer .social-media a img {
 }
 
 .lexend {
-  font: "Lexend", sans-serif auto 23px normal;
+  font: "Lexend", sans-serif auto normal;
 }
 
 .btn-color {
@@ -139,31 +162,6 @@ footer .social-media a img {
 
 .container-full {
   height: 100vh;
-}
-
-.card {
-  margin: auto;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-}
-
-.parragraph {
-  color: #000;
-  text-align: justify;
-  font: "Lexend", sans-serif auto 23px normal;
-  font-weight: 300;
-  line-height: normal;
-  margin: 20px 20px 20px 20px;
-}
-
-h4 {
-  text-align: center;
-}
-
-.poster {
-  border-radius: 10px !important;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  margin: auto;
-  border: rgba(0, 0, 0, 0) !important;
 }
 
 /*# sourceMappingURL=styles.css.map */

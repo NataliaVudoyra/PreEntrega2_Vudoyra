@@ -1,9 +1,9 @@
-$text-font: "Lexend", sans-serif auto 23px normal;
+$text-font: "Lexend", sans-serif auto normal;
 $box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 $color-grey: #333 !important;
 $color-orange: #E5530E !important;
 
-@mixin spacing($margin, $padding){
+@mixin flexible-spacing($margin: 0, $padding: 0) {
     margin: $margin;
     padding: $padding;
 }
@@ -13,10 +13,41 @@ $color-orange: #E5530E !important;
     grid-template-columns: $columns;
 }
 
-body {
-    @include spacing(0, 0);
+@mixin text-styles {
+    font: $text-font;
+    font-size: 25px;
+    font-weight: 300;
+    line-height: normal;
+    text-align: justify;
+    margin: 20px;
 }
 
+body {
+    @include flexible-spacing(0);
+}
+
+%card-styles {
+    margin: auto;
+    box-shadow: $box-shadow;
+}
+
+.card {
+    @extend %card-styles;
+}
+
+.parragraph{
+    @include text-styles;
+}
+
+h4{
+    text-align: center;
+}
+
+.poster {
+    @extend %card-styles;
+    border-radius: 10px !important;
+    border: rgba(0, 0, 0, 0) !important;
+}
 
 .logo {
     height: 20px;
@@ -36,18 +67,18 @@ body {
   margin: 50px;;
 }
 
-nav{
+nav {
     height: 80px;
-    ul{
-        @include spacing(0, 0);
-        li{
+    ul {
+        @include flexible-spacing(0);
+        li {
             display: inline-block;
             margin-left: 20px;
-            a{
+            a {
                 color: #fff !important;
                 text-decoration: none;
                 font-size: 18px;
-                &:hover{
+                &:hover {
                     color: $color-orange;
                 }
             }
@@ -69,24 +100,26 @@ footer {
     padding: 20px 0;
     color: #fff;
     justify-content: space-between;
-    .logo{
+
+    .logo {
         display: flex;
         align-items: center;
-        img{
+        img {
             height: 50px;
-            margin-left: 20px; 
+            margin-left: 20px;
         }
     }
-    .social-media{
+
+    .social-media {
         margin-top: 20px;
-        gap: 10px; 
+        gap: 10px;
         text-align: right;
-        a{
+        a {
             display: inline-block;
             margin: 0 10px;
-            img{
+            img {
                 height: 30px;
-            } 
+            }
         }
     }
 }
@@ -153,29 +186,4 @@ footer {
 
 .container-full{
     height: 100vh;
-}
-
-.card {
-    margin: auto; 
-    box-shadow: $box-shadow;
-}
-
-.parragraph{
-    color: #000;
-    text-align: justify;
-    font: $text-font;
-    font-weight: 300;
-    line-height: normal;
-    margin: 20px 20px 20px 20px;
-}
-
-h4{
-    text-align: center;
-}
-
-.poster{
-    border-radius: 10px !important;
-    box-shadow: $box-shadow;
-    margin: auto;
-    border: rgba(0, 0, 0, 0) !important;
 }

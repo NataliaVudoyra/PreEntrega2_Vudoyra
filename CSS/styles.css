@@ -1,6 +1,9 @@
 body {
   margin: 0;
   padding: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .poster, .card {
@@ -21,6 +24,15 @@ h4 {
   text-align: center;
 }
 
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+main {
+  flex: 1;
+}
+
 .poster {
   border-radius: 10px !important;
   border: rgba(0, 0, 0, 0) !important;
@@ -30,6 +42,10 @@ h4 {
   height: 20px;
   display: flex;
   flex-direction: column;
+}
+
+#main-logo {
+  width: 250px;
 }
 
 .title {
@@ -42,6 +58,15 @@ h4 {
 
 .form {
   margin: 50px;
+}
+
+.form-control {
+  border-color: #E5530E !important;
+}
+
+.game-card {
+  border: none !important;
+  box-shadow: none !important;
 }
 
 nav {
@@ -66,6 +91,7 @@ nav ul li a:hover {
 
 .navbar {
   background-color: #333 !important;
+  z-index: 10;
 }
 
 .nav-item {
@@ -77,6 +103,8 @@ footer {
   padding: 20px 0;
   color: #fff;
   justify-content: space-between;
+  margin-top: auto;
+  height: 10%;
 }
 footer .logo {
   display: flex;
@@ -104,7 +132,7 @@ footer .social-media a img {
 }
 
 .footer-logo img {
-  height: 50px;
+  height: 20px;
   margin-right: 10px;
 }
 
@@ -114,6 +142,12 @@ footer .social-media a img {
     align-items: flex-start;
   }
 }
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .news {
   display: grid;
   grid-template-columns: 3;
@@ -133,10 +167,20 @@ footer .social-media a img {
 
 .btn-color {
   background-color: #E5530E !important;
+  color: #fff !important;
 }
 
 .black-bg {
   background-color: #040C17;
+}
+
+.btn-main {
+  width: 20% !important;
+}
+
+input::selection, textarea::selection {
+  background-color: #4f9912;
+  color: #fff;
 }
 
 .home {
@@ -153,11 +197,13 @@ footer .social-media a img {
 
 .description {
   margin: 20px;
+  font-size: 180%;
 }
 
 .image-container img {
   max-width: 100%;
   height: auto;
+  padding: 10%;
 }
 
 .container-full {

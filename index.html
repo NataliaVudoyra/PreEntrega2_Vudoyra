@@ -3,7 +3,9 @@
   <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Loud Squirrel</title>
+      <meta name="description" content="Descubre los juegos innovadores y creativos desarrollados por el Estudio de Videojuegos Loud Squirrel. ¡Explora nuestros proyectos y noticias más recientes!">
+      <meta name="keywords" content="videojuegos, estudio de videojuegos, desarrollo de juegos, juegos innovadores, loud squirrel">
+      <title>Loud Squirrel Games</title>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
       <link rel="stylesheet" href="./CSS/styles.css">
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -17,7 +19,7 @@
     <nav class="navbar navbar-expand-lg bg-color lexend white-text">
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html">
-          <img src="./assets/images/logo.png" alt="Logo con letras color naranja y en mayúsculas con las palabras Loud Squirrel" width="150">
+          <img src="./assets/images/logo.png" alt="Logo con letras color naranja y en mayúsculas con las palabras Loud Squirrel" id="main-logo">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -49,8 +51,8 @@
           <div class="text-content ">
             <img src="./assets/images/logo_inland.png" alt="Logo con la palabra Inland en mayúsculas">
             <p class="white-text description">Prepárate para un increíble viaje de autodescubrimiento.</p>
-            <a href="https://store.steampowered.com/?l=spanish">
-              <button class="btn btn-color">Comprar</button>
+            <a href="https://store.steampowered.com/?l=spanish" target="_blank">
+              <button class="btn btn-color btn-main">Comprar</button>
             </a>
           </div>
         </div>
@@ -64,14 +66,14 @@
     <!--Contenedor para las entradas más recientes del blog-->
     <div class="news .container-fluid title content">
       <h2 style="text-align: center;">Últimas noticias</h2><br>
-      <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center">
+      <div class="row row-cols-1 row-cols-md-3 g-1 justify-content-center">
         <div class="col">
           <div class="card" style="width: 18rem;">
             <img src="./assets/images/blog1.jpeg" class="card-img-top card-img" alt="ardilla de caricatura en un mundo de videojuegos">
             <div class="card-body">
               <p class="card-text">10 de abril del 2024</p>
               <h5 class="card-title">Plataformeros: clásicos que no pasan de moda</h5>
-              <a href="#" class="btn btn-color">Ver más</a>
+              <a href="./public/article1.html" class="btn btn-color">Ver más</a>
             </div>
           </div>
         </div>
@@ -81,7 +83,7 @@
             <div class="card-body">
               <p class="card-text">9 de abril del 2024</p>
               <h5 class="card-title">Roles en la industria de los videojuegos</h5>
-              <a href="#" class="btn btn-color">Ver más</a>
+              <a href="./public/article2.html" class="btn btn-color">Ver más</a>
             </div>
           </div>
         </div>
@@ -91,14 +93,14 @@
             <div class="card-body">
               <p class="card-text">8 de abril del 2024</p>
               <h5 class="card-title">Beneficios de jugar videojuegos</h5>
-              <a href="#" class="btn btn-color">Ver más</a>
+              <a href="./public/article3.html" class="btn btn-color">Ver más</a>
             </div>
           </div>
         </div>  
       </div> 
     </div>
   </main>
-    <footer class="footer-container">
+    <footer class="footer-container mt-auto">
       <div class="container-fluid">
         <div class="row">
           <div class="col-md-6">
@@ -111,9 +113,9 @@
           </div>
           <div class="col-md-6">
             <div class="social-media text-md-end">
-              <a href="#"><img src="./assets/images/facebook.png" alt="Logo de Facebook" height="30"></a>
-              <a href="#"><img src="./assets/images/twitter.png" alt="Logo de X" height="30"></a>
-              <a href="#"><img src="./assets/images/instagram.png" alt="Logo de Instagram" height="30"></a>
+              <a href="https://www.facebook.com/epicgames" target="_blank"><img src="./assets/images/facebook.png" alt="Logo de Facebook" height="30"></a>
+              <a href="https://x.com/epicgames" target="_blank"><img src="./assets/images/twitter.png" alt="Logo de X" height="30"></a>
+              <a href="https://www.instagram.com/epicgames/" target="_blank"><img src="./assets/images/instagram.png" alt="Logo de Instagram" height="30"></a>
             </div>
           </div>
         </div>
